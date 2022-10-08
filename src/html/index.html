@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css">
   <title>Evaluación Final Natalia Gómez</title>
 </head>
@@ -13,7 +15,15 @@
   <include src="./partials/header.html" ></include>
   <main class="main">
   <include src="./partials/hero.html" ></include>
-  <include src="./partials/section.html" ></include>
+  <section class="reasons">
+    <h2 class="reasons__title">3 Reasons to purchase</h2>
+    <div class=reasons__cont>
+      <include src="./partials/article.html" title="Ut sed metus" text="Lorem ipsum dolor sit amet, consecteur."></include>
+      <include src="./partials/article.html" title="Curabitur ac erat" text="Mauris mattis urna quis lorem molestie."></include>
+      <include src="./partials/article.html" title="Morbi dictum" text="Aliquam in dolor et dolor tincidunt."></include>
+    </div>
+    <button class="button-orange">More reasons</button>
+  </section>
   </main>
   <include src="./partials/footer.html" ></include>
 </body>
