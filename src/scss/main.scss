@@ -73,6 +73,18 @@ h1{
        color: $blackfonthero;
        
     }
+    &__button{
+        color: $orangeColor;
+        border: solid ;
+        font-size: 1.25rem;
+        border-radius: 50px;
+        font-weight: bold;
+        margin-bottom: 2.5rem;
+        padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+        width: 4.75rem;
+        height: 2.813rem;
+       
+    }
 }
 
 .reasons {
@@ -89,6 +101,7 @@ h1{
         text-transform: capitalize;
         font-size: 1.5rem;
         margin: 1rem 0.5rem 3rem 0.5rem;
+        font-family: $fontTitle;
     }
     &__cont{
             font-family: Roboto-Regular;
