@@ -71,6 +71,42 @@ h1{
     &__p{
        font-size: 1.125rem;
        color: $blackfonthero;
-        
+       
     }
+}
+
+.reasons {
+    background-color: $lightBluebackground;
+    text-align: center;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    
+    &__title{
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        margin: 1rem 0.5rem 3rem 0.5rem;
+    }
+    &__cont{
+            font-family: Roboto-Regular;
+        } 
+    
+    &__buttonorange{
+        background-color: $orangeColor;
+        color: $whitecolor;
+        border: none;
+        border-radius: 22px;
+        padding: 0.7rem 2rem 0.7rem 2rem;
+        font-size: 1.25rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        
+        
+
+    }  
 }
