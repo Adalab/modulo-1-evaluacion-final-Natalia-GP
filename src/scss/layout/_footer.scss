@@ -9,6 +9,15 @@
     padding-top: 3.5rem;
     padding-bottom: 3rem;
 
+    &__arrow{
+        background-color: $whitecolor;
+        border-radius: 50%;
+        width: 2rem;
+        padding: 0.8rem 0.5rem 0.5rem 0.5rem;;
+        position: relative;        
+        top:1.5rem;          
+    }
+
     &__nav1{
         text-transform: uppercase;
         text-decoration: none;
