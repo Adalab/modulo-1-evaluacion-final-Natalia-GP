@@ -5,4 +5,45 @@ header{
   background-size: cover;
   height: 100vh;
   position: relative;
+}
+.header{
+  &__menu{
+    background-color: $bluehamburger;
+    position: fixed;
+    top: 0;
+    padding: 7px; 
+}
+  &__maintitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    transform: translateY(100%);
+    &--title{
+      text-transform: uppercase;
+      color: $whitecolor;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    &--subtitle{
+      color: $whitecolor;
+      font-size: 16px;
+      line-height: 1.19;
+      text-align: center;
+      margin-top: 15px;
+    }
+    &--arrow {
+      background-color: $whitecolor;        
+      padding: 13px 9.7px 10px 9.7px;
+      border-radius: 50%;
+      margin: 1.5rem 0 2.5rem 0;
+      display: flex;
+      width: 100%;
+      width: 16.8px;
+      height: 9.6px   
+      }
+  }
 } 
+
