@@ -4,7 +4,7 @@
 //@import 'components/links';
 //@import 'layout/page';
 @import 'layout/header';
-//@import 'layout/footer';
+@import 'layout/footer';
 //@import 'pages/index';
 
   
@@ -50,3 +50,20 @@ h1{
     font-weight: bold;
 }
 
+.hero{
+
+    &__pretitle{
+        font-family: $fontText;
+        color: $blueColor;
+        font-size: 14px;
+    }
+    &__maintitle{
+        font-family: $fontTitle;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__p{
+       font-size: 18px;
+        
+    }
+}
