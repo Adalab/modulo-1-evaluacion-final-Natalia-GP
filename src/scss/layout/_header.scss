@@ -5,27 +5,44 @@ header{
   background-size: cover;
   height: 100vh;
   position: relative;
+  @media all and (min-width: 768px) {
+    padding-bottom: 3rem;
+}
+  
 }
 .header{
   &__menu{
     background-color: $bluehamburger;
     position: fixed;
     top: 0;
-    padding: 7px; 
-}
+    padding: 7px;
+    @media all and (min-width: 768px){
+      transform: scale(1.5);
+    } 
+  }
   &__maintitle {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
-    transform: translateY(100%);
+    position: absolute;
+    bottom: 34px;
+
+    @media all and (min-width: 768px){
+    }
+
+    
     &--title{
       text-transform: uppercase;
       color: $whitecolor;
       text-align: center;
       font-size: 2.5rem;
       font-weight: bold;
+      @media all and (min-width: 768px) {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
     }
     &--subtitle{
       color: $whitecolor;
@@ -33,17 +50,26 @@ header{
       line-height: 1.19;
       text-align: center;
       margin-top: 15px;
+      @media all and (min-width: 768px){
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.5rem; 
+        width: 50vw;
+        
+      }
     }
     &--arrow {
       background-color: $whitecolor;        
-      padding: 13px 9.7px 10px 9.7px;
       border-radius: 50%;
-      margin: 1.5rem 0 2.5rem 0;
       display: flex;
-      width: 100%;
-      width: 16.8px;
-      height: 9.6px   
-      }
+      justify-content:center;
+      align-items: center;
+      width: 37px;
+      height: 37px;               
+      @media all and (min-width: 768px){
+        transform: scale(1.5);
+      } 
+    }
   }
 } 
 

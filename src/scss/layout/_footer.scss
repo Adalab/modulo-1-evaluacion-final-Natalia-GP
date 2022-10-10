@@ -13,9 +13,12 @@
     &__arrow{
         background-color: $whitecolor;
         border-radius: 50px;
+        display: flex;
+        justify-content: center;
         width: 2.813rem;
         height: 2.813rem;
         transform: translateY(-80px);
+
                  
     }
 

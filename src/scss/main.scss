@@ -10,24 +10,45 @@
 .hero{
    display: flex;
    flex-direction: column;
-   height: 100vw;
+   height: 100vh;
    justify-content: space-around;
    text-align:left;
-   padding: 37px 15px 35px 15px;
+   margin: 3rem 1rem 0 1rem;
+   @media all and (min-width: 768px){
+    justify-content: space-between;
+    height: 50vw;
+    @media all and (min-width: 768px) { 
+        margin: 3rem 1rem 0 3rem; 
+    }
+   }
    
     &__pretitle{
         font-family: $fontText;
         color: $blueColor;
         font-size: 14px;
+        @media all and (min-width: 768px) { 
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+        } 
     }
     &__maintitle{
         font-family: $fontTitle;
         font-size: 1.5rem;
         font-weight: bold;
+        @media all and (min-width: 768px) { 
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+        } 
     }
     &__p{
+        font-family: $fontText;
        font-size: 1.125rem;
        color: $blackfonthero;
+       @media all and (min-width: 768px) {
+        font-size: 1.25rem;
+        line-height: 2rem;            
+        margin-bottom: 3rem;
+    }     
        
     }
     &__button{
@@ -50,20 +71,34 @@
     padding-top: 1rem;
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    
+    margin-top: 2rem;
     &__title{
         font-weight: bold;
         text-transform: capitalize;
         font-size: 1.5rem;
-        margin: 1rem 0.5rem 3rem 0.5rem;
-        font-family: $fontTitle;
+        margin: 1rem 0.5rem 2rem 0.5rem;
     }
-    &__cont{
-            font-family: Roboto-Regular;
-        } 
-    
+    &__article {
+        
+        &--title {
+            font-family: $fontTitle;
+            font-size: 1.12rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        &--text {
+            font-family: $fontText;
+            font-size: 1.12rem;
+            line-height: 1.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            width: 11.25rem;
+            height: 4rem;       
+        }
+    }
     &__buttonorange{
         background-color: $orangeColor;
         color: $whitecolor;
@@ -75,5 +110,8 @@
         margin-bottom: 3rem;
         margin-left: 5rem;
         margin-right: 5rem;
+        @media all and (min-width: 768px) {
+            margin: 0rem 15rem 5rem 15rem;
+        }
     }
 }
