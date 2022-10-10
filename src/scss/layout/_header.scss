@@ -6,8 +6,10 @@ header{
   height: 100vh;
   position: relative;
   @media all and (min-width: 768px) {
-    padding-bottom: 3rem;
-}
+    padding-bottom: 3rem; 
+  }
+  
+  
   
 }
 .header{
@@ -17,8 +19,9 @@ header{
     top: 0;
     padding: 7px;
     @media all and (min-width: 768px){
-      transform: scale(1.5);
-    } 
+      transform: scale(1.5); 
+    }
+    
   }
   &__maintitle {
     display: flex;
@@ -28,10 +31,7 @@ header{
     gap: 10px;
     position: absolute;
     bottom: 34px;
-
-    @media all and (min-width: 768px){
-    }
-
+    
     
     &--title{
       text-transform: uppercase;
@@ -39,11 +39,17 @@ header{
       text-align: center;
       font-size: 2.5rem;
       font-weight: bold;
-      @media all and (min-width: 768px) {
+      @media all and (min-width: 768px){
         font-size: 5rem;
         line-height: 6rem;
+      }
+      @media all and (min-width: 1024px){
+        font-size: 8rem;
+        line-height: 7rem
+      }
+      
     }
-    }
+    
     &--subtitle{
       color: $whitecolor;
       font-size: 16px;
