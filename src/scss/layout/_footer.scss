@@ -5,36 +5,21 @@
     color: $whitecolor;    
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  //no consigo cambiar el orden.
     align-items: center;
     padding-top: 3.5rem;
     padding-bottom: 3rem;
     @media all and (min-width: 768px){
-        display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;  
-        padding-top: 3rem;             
+        justify-content: space-between;
+        text-align: left;               
         padding-bottom: 1rem;  
         align-items: flex-start;   
     }
     @media all and (min-width: 1024px){ 
         justify-content: center;    
     }
-    &__arrow{
-        background-color: $whitecolor;
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        width: 2.813rem;
-        height: 2.813rem;
-        transform: translateY(-80px);
-        @media all and (min-width: 768px){
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            right: 50vw;   
-        }
-    }
+
     &__nav1{
         text-transform: uppercase;
         text-decoration: none;  
@@ -49,32 +34,51 @@
     }
     &__nav2{
         text-transform: uppercase;
-        
         &--socialmedia{
             line-height: 1.7rem;
-            margin-bottom: 1.7rem;    
+            margin-bottom: 1.7rem;
+            a{
+                text-decoration: none;
+                color: $whitecolor;
+            }    
         }
-        a {
-            text-decoration: none;
-            color: $whitecolor;
-        }
-        &--copy{
-            line-height: 1.7rem;
-            font-size: 0.875rem;
-            @media all and (min-width: 768px){            
+    }    
+    &__copy{
+        line-height: 1.7rem; //no consigo quitar las líneas del copy
+        font-size: 0.875rem;
+        color: $whitecolor;
+        text-decoration: none;
+        @media all and (min-width: 768px){            
                 margin-left: 2rem;
-            }         
-            @media all and (min-width: 1024px){ 
-                position: relative;           
-                right: 9rem;
-            }                        
-            &--heart{
-                color: $orangeColor;   
-            }
+        }         
+        @media all and (min-width: 1024px){ 
+            position: relative;           
+            right: 9rem;
+        }                        
+        &--heart{
+            color: $orangeColor;   
         }
+    } 
+    &__arrow{
+        background-color: $whitecolor;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        width: 2.813rem;
+        height: 2.813rem;
+        transform: translateY(-80px);
+        @media all and (min-width: 768px){
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            right: 50vw;   
         }
-       
+        @media all and (min-width: 1024px){
+            right: 12vh; 
+            position: relative;  
+        }    
     }
+}
     
   
 

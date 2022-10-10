@@ -8,11 +8,12 @@ header{
   @media all and (min-width: 768px) {
     padding-bottom: 3rem; 
   }
-  
-  
-  
+  @media all and (min-width: 1024px) {
+    padding-bottom: 1rem;
+}
 }
 .header{
+  position: relative;
   &__menu{
     background-color: $bluehamburger;
     position: fixed;
@@ -31,6 +32,12 @@ header{
     gap: 10px;
     position: absolute;
     bottom: 34px;
+    @media all and (min-width: 1024px){
+      justify-content: center;
+      align-items: center;
+      left: 18rem;
+      right: 18rem;
+    }
     
     
     &--title{
@@ -44,7 +51,7 @@ header{
         line-height: 6rem;
       }
       @media all and (min-width: 1024px){
-        font-size: 8rem;
+        font-size: 6.25rem;
         line-height: 7rem
       }
       
