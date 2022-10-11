@@ -66,6 +66,12 @@
         padding: 0.3rem 1.5rem 0.3rem 1.5rem;
         width: 4.75rem;
         height: 2.813rem;
+        cursor: pointer;
+        transition: transform 1s;
+        &:hover{
+            background-color:darkmagenta;
+            transform: scale(1.5);
+        }
        
     }
 }
@@ -135,6 +141,8 @@
         margin-bottom: 3rem;
         margin-left: 5rem;
         margin-right: 5rem;
+        cursor: pointer;
+        transition: transform 1s;
         @media all and (min-width: 768px) {
             margin: 0rem 15rem 0rem 15rem;
             grid-column-start: 1;
@@ -144,6 +152,9 @@
             width: 210px;
             margin-bottom: 57px;
             margin-top: 60px;
+        }
+        &:hover{
+           transform: rotate(180deg);
         }
     }
 }
