@@ -1,11 +1,10 @@
 .footer {
-    font-size: 1rem;
     font-family: $fontText; 
     background-color: $darkbluefooter;
     color: $whitecolor;    
     text-align: center;
     display: flex;
-    flex-direction: column;  //no consigo cambiar el orden.
+    flex-direction: column; 
     align-items: center;
     padding-top: 3.5rem;
     padding-bottom: 3rem;
@@ -22,37 +21,43 @@
 
     &__nav1{
         text-transform: uppercase;
-        text-decoration: none;  
-        &--links{
+        text-decoration: none;
+        @media all and (min-width: 768px){
+            width: 75%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 8rem;
             line-height: 1.7rem;
-            margin-bottom: 1.7rem;
-        }
-        a {
-            text-decoration: none;
-            color: $whitecolor;
-        }
+            @media all and (min-width: 1024px){
+                width: auto;
+                gap: 9rem;
+
+            }
+        }  
+    &--links{
+        margin-bottom: 1.7rem;
     }
-    &__nav2{
-        text-transform: uppercase;
-        &--socialmedia{
-            line-height: 1.7rem;
-            margin-bottom: 1.7rem;
-            a{
-                text-decoration: none;
-                color: $whitecolor;
-            }    
-        }
+    &--lk{
+        padding: 0.5rem;
+    }
+    a {
+        color: $whitecolor;
+        text-decoration: none;            
+    }
+    &--lk{
+        padding: 0.5rem;
+    }    
     }    
     &__copy{
-        line-height: 1.7rem; //no consigo quitar las líneas del copy
+        line-height: 1.7rem; 
         font-size: 0.875rem;
         color: $whitecolor;
         text-decoration: none;
         @media all and (min-width: 768px){            
                 margin-left: 2rem;
         }         
-        @media all and (min-width: 1024px){ 
-            position: relative;           
+        @media all and (min-width: 1024px){            
             right: 9rem;
         }                        
         &--heart{
@@ -74,8 +79,7 @@
             right: 50vw;   
         }
         @media all and (min-width: 1024px){
-            right: 12vh; 
-            position: relative;  
+           right: 45%;  
         }    
     }
 }
