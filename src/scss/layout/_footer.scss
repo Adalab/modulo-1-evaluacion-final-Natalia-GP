@@ -1,15 +1,16 @@
 .footer {
     font-family: $fontText; 
-    background-color: $darkbluefooter;
-    color: $whitecolor;    
+    background-color: $bluehamburger;
+    color: black;    
     text-align: center;
     display: flex;
     flex-direction: column; 
     align-items: center;
     padding-top: 3.5rem;
     padding-bottom: 3rem;
+
     @media all and (min-width: 768px){
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: space-between;
         text-align: left;               
         padding-bottom: 1rem;  
@@ -22,6 +23,7 @@
     &__nav1{
         text-transform: uppercase;
         text-decoration: none;
+
         @media all and (min-width: 768px){
             width: 75%;
             display: flex;
@@ -36,13 +38,14 @@
             }
         }  
     &--links{
-        margin-bottom: 1.7rem;
+        padding-bottom: 45px;
+    
     }
     &--lk{
         padding: 0.5rem;
     }
     a {
-        color: $whitecolor;
+        color: black;
         text-decoration: none;            
     }
     &--lk{
@@ -50,19 +53,25 @@
     }    
     }    
     &__copy{
+        padding-top: 45px;
         line-height: 1.7rem; 
         font-size: 0.875rem;
-        color: $whitecolor;
+        color: black;
         text-decoration: none;
         @media all and (min-width: 768px){            
                 margin-left: 2rem;
-        }         
+            &--componets{
+                color: $orangeColor;
+            }   
+        }  
+
         @media all and (min-width: 1024px){            
             right: 9rem;
         }                        
         &--heart{
             color: $orangeColor;   
         }
+        
     } 
     &__arrow{
         background-color: $whitecolor;
